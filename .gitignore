@@ -1,0 +1,22 @@
+# Sistema Operacional e WSL
+*:Zone.Identifier
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs e Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Backups e Compactados
+*.zip
+*.tar.gz
+*.rar
+*.bak
+*.tmp
+
+# Logs
+*.log

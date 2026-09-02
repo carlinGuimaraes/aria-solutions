@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quem Somos — ARIA Solutions | Segurança Eletrônica e Controle de Acesso</title>
+  <meta name="description" content="Conheça a ARIA Solutions: liderada por Daniel Hermon, oferecemos soluções completas em segurança eletrônica, controle de acesso e automação em Garça e região.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Estilos Globais -->
+  <link rel="stylesheet" href="../style.css">
+
+  <style>
+    .about-hero {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+      color: #ffffff;
+      padding: 140px 0 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .about-hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 40px;
+      background: linear-gradient(to top, var(--bg-body), transparent);
+    }
+    .about-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      color: var(--accent);
+      padding: 6px 16px;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 20px;
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+      margin: 60px 0;
+    }
+    .about-text h3 {
+      font-size: 1.8rem;
+      color: var(--primary);
+      margin-bottom: 16px;
+      font-weight: 800;
+    }
+    .about-text p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+    }
+    .about-image-card {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-xl);
+      border: 1px solid var(--border-light);
+    }
+    .about-image-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .about-image-card:hover img {
+      transform: scale(1.03);
+    }
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 28px;
+      margin: 40px 0;
+    }
+    .pillar-card {
+      background: #ffffff;
+      padding: 32px 28px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+    }
+    .pillar-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--accent);
+    }
+    .pillar-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      background: rgba(11, 55, 33, 0.08);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+    .pillar-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+    .pillar-desc {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .company-details-box {
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-light);
+      padding: 36px;
+      margin: 50px 0;
+      box-shadow: var(--shadow-md);
+    }
+    .details-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      margin-top: 24px;
+    }
+    .detail-item {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .detail-label {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-light-muted);
+      font-weight: 700;
+    }
+    .detail-val {
+      font-size: 1.05rem;
+      color: var(--text-dark);
+      font-weight: 600;
+    }
+    @media (max-width: 900px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="../home/" class="brand-logo">
+        <img src="../logo.jpg" alt="ARIA Solutions" class="brand-logo-img">
+      </a>
+
+      <nav class="nav-links">
+        <a href="../home/" class="nav-link">Início</a>
+        <a href="#" class="nav-link active">Quem somos</a>
+        <div class="nav-dropdown">
+          <a href="../home/#solucoes" class="nav-link">Soluções <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
+          <div class="dropdown-menu">
+            <a href="../catracas-e-torniquetes/" class="dropdown-item">Catracas & Torniquetes</a>
+            <a href="../cancelas-automaticas/" class="dropdown-item">Cancelas Automáticas</a>
+            <a href="../home/#solucoes" class="dropdown-item">Reconhecimento Facial</a>
+            <a href="../home/#solucoes" class="dropdown-item">CFTV Inteligente</a>
+          </div>
+        </div>
+        <a href="../home/#diferenciais" class="nav-link">Diferenciais</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://api.whatsapp.com/send?phone=5514996407570&text=Ol%C3%A1!%20Gostaria%20de%20conversar%20sobre%20as%20solu%C3%A7%C3%B5es%20da%20ARIA%20Solutions." target="_blank" class="btn btn-primary btn-sm">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>Fale Conosco</span>
+        </a>
+        <button class="mobile-toggle" aria-label="Abrir menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="about-hero">
+    <div class="container text-center">
+      <div class="about-badge">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span>Nossa História & Missão</span>
+      </div>
+      <h1 style="font-size: clamp(2.2rem, 4vw, 3.2rem); font-weight: 800; line-height: 1.2; margin-bottom: 20px;">
+        Segurança inteligente e controle de acesso<br>com proximidade e excelência técnica
+      </h1>
+      <p style="font-size: 1.15rem; color: #cbd5e1; max-width: 780px; margin: 0 auto 30px; line-height: 1.7;">
+        Fundada por Daniel Hermon, a ARIA Solutions nasceu com o propósito de conectar tecnologia inovadora, alta precisão operacional e atendimento humanizado para empresas, condomínios e indústrias.
+      </p>
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <a href="https://api.whatsapp.com/send?phone=5514996407570&text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20equipe%20da%20ARIA%20Solutions." target="_blank" class="btn btn-whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>Falar com nosso especialista</span>
+        </a>
+        <a href="../home/#solucoes" class="btn btn-outline-white">
+          <span>Ver Catálogo de Soluções</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SOBRE NÓS / HISTÓRIA ================= -->
+  <section class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="badge-pill">Autoridade & Experiência</div>
+          <h3>Tecnologia de ponta com suporte local de verdade</h3>
+          <p>
+            No mercado de controle de acesso e segurança eletrônica, muitas organizações sofrem com projetos mal dimensionados, instalações improvisadas e atendimentos distantes que demoram dias para responder.
+          </p>
+          <p>
+            A <strong>ARIA Solutions</strong> opera com uma abordagem diferente: somos consultores e parceiros estratégicos. Analisamos o fluxo de pessoas, a infraestrutura física e os requisitos de segurança de cada cliente para propor a arquitetura ideal.
+          </p>
+          <p>
+            Trabalhamos com marcas homologadas e líderes do segmento nacional e global (como Garen, Control iD, Intelbras e Hikvision), garantindo equipamentos robustos, peças de reposição e suporte técnico contínuo.
+          </p>
+        </div>
+        <div class="about-image-card">
+          <img src="../images/galeria-daniel-garen.png" alt="Daniel Hermon - ARIA Solutions no estande oficial Garen">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= NOSSOS PILARES ================= -->
+  <section class="section" style="background: var(--bg-card-subtle);">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="badge-pill">Valores e Compromissos</div>
+        <h2 class="section-title">Os 4 Pilares da ARIA Solutions</h2>
+        <p class="section-subtitle">O que guia nosso trabalho diário em cada instalação e atendimento.</p>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-icon">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
+          <h4 class="pillar-title">Atendimento End-to-End</h4>
+          <p class="pillar-desc">
+            Cuidamos de tudo: desde a consultoria e levantamento de necessidades até a instalação elétrica, configuração de software e treinamento da sua equipe.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <h4 class="pillar-title">Agilidade & Presença Local</h4>
+          <p class="pillar-desc">
+            Sediados em Garça/SP, temos pronto atendimento em Garça, Marília, Bauru e região, eliminando a lentidão de chamados para empresas distantes.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+          <h4 class="pillar-title">Equipamentos Homologados</h4>
+          <p class="pillar-desc">
+            Trabalhamos exclusivamente com marcas consagradas no mercado, garantindo durabilidade extrema, garantia de fábrica e integração nativa com sistemas em nuvem.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon">
+            <i class="fa-solid fa-handshake"></i>
+          </div>
+          <h4 class="pillar-title">Transparência e Suporte</h4>
+          <p class="pillar-desc">
+            Relacionamento próximo e ético. Nossos clientes contam com planos de manutenção preventiva e suporte dedicado via WhatsApp e telefone.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GALERIA EM AÇÃO ================= -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="badge-pill">Nossa Atuação</div>
+        <h2 class="section-title">Fotos e Eventos do Setor</h2>
+        <p class="section-subtitle">Presença constante em feiras de tecnologia, treinamentos oficiais e instalações práticas.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 36px;">
+        <div class="about-image-card">
+          <img src="../images/galeria-equipe-estande.png" alt="Equipe ARIA Solutions em evento de segurança">
+        </div>
+        <div class="about-image-card">
+          <img src="../images/galeria-daniel-evo.png" alt="Demonstração de sistemas e bancada de testes">
+        </div>
+        <div class="about-image-card">
+          <img src="../images/tecnico-instalacao-cancela.png" alt="Técnico especializado em instalação de cancela automática">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DADOS DA EMPRESA / TRANSPARÊNCIA ================= -->
+  <section class="section" style="background: var(--bg-card-subtle);">
+    <div class="container">
+      <div class="company-details-box">
+        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px;">
+          <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(16,185,129,0.15); color: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 1.3rem;">
+            <i class="fa-solid fa-building-circle-check"></i>
+          </div>
+          <div>
+            <h3 style="font-size: 1.4rem; color: var(--primary); font-weight: 800; margin: 0;">Dados Cadastrais & Localização</h3>
+            <p style="font-size: 0.95rem; color: var(--text-muted); margin: 4px 0 0;">Transparência e segurança jurídica para a sua contratação.</p>
+          </div>
+        </div>
+
+        <div class="details-grid">
+          <div class="detail-item">
+            <span class="detail-label">Razão Social</span>
+            <span class="detail-val">Daniel Hermon de Oliveira Lima</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">CNPJ</span>
+            <span class="detail-val">58.294.468/0001-16</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Sede Oficial</span>
+            <span class="detail-val">Rua Coronel Joaquim Piza, 140 – Garça/SP</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Atendimento</span>
+            <span class="detail-val">Garça, Marília, Bauru e Interior Paulista</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RODAPÉ ================= -->
+  <footer class="footer" id="contato">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="../home/" style="display: inline-block;">
+            <img src="../logo.jpg" alt="ARIA Solutions" class="footer-logo-img">
+          </a>
+          <p style="font-size: 0.9rem; line-height: 1.6; margin-bottom: 20px;">
+            Conectando tecnologia, segurança e controle de acesso de alta performance para empresas e condomínios em Garça e região.
+          </p>
+          <div style="font-size: 0.85rem; color: var(--text-light-muted);">
+            <strong>Razão Social:</strong> Daniel Hermon de Oliveira Lima<br>
+            <strong>CNPJ:</strong> 58.294.468/0001-16
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Soluções</h4>
+          <div class="footer-links">
+            <a href="../catracas-e-torniquetes/">Catracas & Torniquetes</a>
+            <a href="../cancelas-automaticas/">Cancelas Automáticas</a>
+            <a href="../home/#solucoes">Reconhecimento Facial</a>
+            <a href="../home/#solucoes">CFTV & Câmeras IP</a>
+            <a href="../home/#solucoes">Portaria Autônoma</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <div class="footer-links">
+            <a href="../home/">Página Inicial</a>
+            <a href="#">Quem Somos</a>
+            <a href="../home/#diferenciais">Por que a ARIA</a>
+            <a href="../home/#solucoes">Simulador de Soluções</a>
+            <a href="#contato">Fale Conosco</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Atendimento</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 12px;">
+            <i class="fa-solid fa-location-dot" style="color: var(--accent-light); margin-right: 8px;"></i>
+            Rua Coronel Joaquim Piza, 140<br>Garça - SP, CEP 17400-000
+          </p>
+          <p style="font-size: 0.9rem; margin-bottom: 16px;">
+            <i class="fa-brands fa-whatsapp" style="color: var(--accent-light); margin-right: 8px;"></i>
+            (14) 99640-7570
+          </p>
+          <a href="https://api.whatsapp.com/send?phone=5514996407570" target="_blank" class="btn btn-outline-white btn-sm" style="width: 100%;">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>Conversar no WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 ARIA Solutions. Todos os direitos reservados. CNPJ: 58.294.468/0001-16.</p>
+        <p>Desenvolvido com excelência técnica para alta conversão.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão WhatsApp Flutuante -->
+  <div class="whatsapp-float-widget">
+    <div class="whatsapp-float-tooltip">
+      <span class="online-dot"></span>
+      <span>Fale com Daniel e equipe!</span>
+    </div>
+    <a href="https://api.whatsapp.com/send?phone=5514996407570&text=Ol%C3%A1!%20Vim%20pela%20p%C3%A1gina%20Quem%20Somos%20da%20ARIA%20Solutions." target="_blank" class="whatsapp-float-btn" title="Falar no WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+</html>
