@@ -1,0 +1,531 @@
+<!-- ==========================================================================
+     ARIA SOLUTIONS — HOME (MODELO PARA O EDITOR DE CÓDIGO DO WORDPRESS)
+     
+     INSTRUÇÕES DE USO:
+     1. No painel do WordPress, crie ou edite a página Home (Página Inicial).
+     2. Mude o editor para o "Editor de Código" (Atalho: Ctrl + Shift + Alt + M ou 
+        clique nos 3 pontinhos no canto superior direito > "Editor de código").
+     3. Cole este código diretamente no editor de código.
+     4. Todas as seções possuem a classe "alignfull" para ocupar 100% da largura da tela.
+     5. Imagens: Quando fizer o upload das fotos na Biblioteca de Mídia do WordPress, 
+        basta substituir os caminhos das tags <img src="..."> pelo link da mídia correspondente.
+     6. Caso seu tema já tenha Header e Footer nativos configurados, você pode optar por
+        usar apenas as seções 2 a 9 (do Hero até a Galeria).
+     ========================================================================== -->
+
+<!-- ================= 1. HEADER / NAVBAR ================= -->
+  <header class="site-header alignfull">
+    <div class="container navbar">
+      <a href="#inicio" class="nav-brand">
+        <img src="../logo.jpg" alt="ARIA Solutions" class="nav-logo">
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#inicio" class="nav-link active">Início</a></li>
+          <li><a href="/quem-somos/" class="nav-link">Quem somos</a></li>
+          <li><a href="#solucoes" class="nav-link">Soluções</a></li>
+          <li><a href="#software" class="nav-link">Segmentos</a></li>
+          <li><a href="#parceiros" class="nav-link">Parceiros</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://api.whatsapp.com/send?phone=5514996407570&text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20especialista%20da%20ARIA%20Solutions." target="_blank" class="btn btn-primary">
+          <span>Fale com especialista</span>
+        </a>
+        <button class="nav-toggle" aria-label="Abrir Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= 2. HERO SECTION ================= -->
+  <section class="hero-section alignfull" id="inicio">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Inovação em cada acesso</h1>
+        <p class="hero-subtitle">
+          Soluções completas em controle de acesso, segurança eletrônica e software para tornar sua empresa mais segura, eficiente e inteligente.
+        </p>
+        <a href="https://api.whatsapp.com/send?phone=5514996407570&text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20com%20um%20especialista." target="_blank" class="btn btn-primary hero-btn">
+          <span>Fale com especialista</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 3. VALUE PROPOSITION BAR (FAIXA VERDE) ================= -->
+  <section class="value-bar alignfull">
+    <div class="container">
+      <div class="value-bar-grid">
+        <div class="value-item">
+          <i class="fa-solid fa-award value-icon"></i>
+          <span>+10 anos<br>de experiência</span>
+        </div>
+        <div class="value-item">
+          <i class="fa-solid fa-handshake-angle value-icon"></i>
+          <span>Atendimento ágil<br>e próximo</span>
+        </div>
+        <div class="value-item">
+          <i class="fa-solid fa-users-gear value-icon"></i>
+          <span>Equipe especializada<br>em tecnologia</span>
+        </div>
+        <div class="value-item">
+          <i class="fa-solid fa-layer-group value-icon"></i>
+          <span>Soluções completas<br>do projeto ao pós-venda</span>
+        </div>
+        <div class="value-item">
+          <i class="fa-solid fa-building-circle-check value-icon"></i>
+          <span>Tecnologia para empresas<br>de todos os portes</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 4. NOSSAS SOLUÇÕES (6 CARDS) ================= -->
+  <section class="solutions-section alignfull" id="solucoes">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="badge-pill">Nossas soluções</div>
+        <h2 class="section-title">Um ecossistema de soluções para uma<br>operação mais inteligente</h2>
+        <p class="section-subtitle">Tecnologia integrada para conectar controle de acesso, segurança, monitoramento e gestão.</p>
+      </div>
+
+      <div class="solutions-grid">
+        <!-- 1. Catracas & Torniquetes -->
+        <div class="solution-card">
+          <div class="card-top">
+            <div class="card-icon-wrap">
+              <i class="fa-solid fa-id-badge"></i>
+            </div>
+            <h3 class="card-title">Catracas & Torniquetes</h3>
+            <p class="card-desc">Controle preciso de entrada e saída com bloqueio físico de alta durabilidade. Integração com leitores biométricos, cartões RFID e QR Code.</p>
+            <div class="card-tags">
+              <span class="tag-badge">Clubes</span>
+              <span class="tag-badge">Empresas</span>
+              <span class="tag-badge">Portarias</span>
+              <span class="tag-badge">Academias</span>
+              <span class="tag-badge">Eventos</span>
+            </div>
+          </div>
+          <div class="card-action">
+            <a href="/catracas-e-torniquetes/" class="btn-card">Saiba mais</a>
+          </div>
+        </div>
+
+        <!-- 2. Leitores faciais e Biométricos -->
+        <div class="solution-card">
+          <div class="card-top">
+            <div class="card-icon-wrap">
+              <i class="fa-solid fa-user-shield"></i>
+            </div>
+            <h3 class="card-title">Leitores faciais e Biométricos</h3>
+            <p class="card-desc">Leitura facial sem contato com detecção de vivacidade (anti-fraude). Relógios eletrônicos para gestão de ponto, facial e biométrico.</p>
+            <div class="card-tags">
+              <span class="tag-badge">Controle de acesso</span>
+              <span class="tag-badge">Empresas</span>
+              <span class="tag-badge">Portarias</span>
+              <span class="tag-badge">Gestão de ponto</span>
+            </div>
+          </div>
+          <div class="card-action">
+            <a href="https://api.whatsapp.com/send?phone=5514996407570&text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Leitores%20Faciais%20e%20Biom%C3%A9tricos." target="_blank" class="btn-card">Saiba mais</a>
+          </div>
+        </div>
+
+        <!-- 3. Cancelas -->
+        <div class="solution-card">
+          <div class="card-top">
+            <div class="card-icon-wrap">
+              <i class="fa-solid fa-road-barrier"></i>
+            </div>
+            <h3 class="card-title">Cancelas</h3>
+            <p class="card-desc">Controle de entrada e saída de veículos com mais segurança, praticidade e automação.</p>
+            <div class="card-tags">
+              <span class="tag-badge">Indústria</span>
+              <span class="tag-badge">Agronegócio</span>
+              <span class="tag-badge">Condomínios</span>
+              <span class="tag-badge">Estacionamento</span>
+            </div>
+          </div>
+          <div class="card-action">
+            <a href="/cancelas-automaticas/" class="btn-card">Saiba mais</a>
+          </div>
+        </div>
+
+        <!-- 4. Controle Veicular -->
+        <div class="solution-card">
+          <div class="card-top">
+            <div class="card-icon-wrap">
+              <i class="fa-solid fa-car-side"></i>
+            </div>
+            <h3 class="card-title">Controle Veicular</h3>
+            <p class="card-desc">Automatize o acesso de veículos com identificação, monitoramento e controle em tempo real.</p>
+            <div class="card-tags">
+              <span class="tag-badge">Indústrias</span>
+              <span class="tag-badge">Empresas</span>
+              <span class="tag-badge">Agronegócio</span>
+              <span class="tag-badge">Estacionamentos</span>
+              <span class="tag-badge">Condomínios</span>
+            </div>
+          </div>
+          <div class="card-action">
+            <a href="https://api.whatsapp.com/send?phone=5514996407570&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20Controle%20Veicular." target="_blank" class="btn-card">Saiba mais</a>
+          </div>
+        </div>
+
+        <!-- 5. Detector de metal -->
+        <div class="solution-card">
+          <div class="card-top">
+            <div class="card-icon-wrap">
+              <i class="fa-solid fa-person-shelter"></i>
+            </div>
+            <h3 class="card-title">Detector de metal</h3>
+            <p class="card-desc">Mais segurança na entrada de pessoas com inspeção rápida e controle de acesso eficiente.</p>
+            <div class="card-tags">
+              <span class="tag-badge">Indústrias</span>
+              <span class="tag-badge">Empresas</span>
+              <span class="tag-badge">Portarias</span>
+              <span class="tag-badge">Órgãos Públicos</span>
+            </div>
+          </div>
+          <div class="card-action">
+            <a href="https://api.whatsapp.com/send?phone=5514996407570&text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Detectores%20de%20Metal." target="_blank" class="btn-card">Saiba mais</a>
+          </div>
+        </div>
+
+        <!-- 6. CFTV & Monitoramento -->
+        <div class="solution-card">
+          <div class="card-top">
+            <div class="card-icon-wrap">
+              <i class="fa-solid fa-video"></i>
+            </div>
+            <h3 class="card-title">CFTV & Monitoramento</h3>
+            <p class="card-desc">Câmeras com resolução Ultra HD, visão noturna colorida, detecção de movimento com Inteligência Artificial e acesso remoto pelo celular.</p>
+            <div class="card-tags">
+              <span class="tag-badge">Clubes</span>
+              <span class="tag-badge">Empresas</span>
+              <span class="tag-badge">Portarias</span>
+              <span class="tag-badge">Academias</span>
+              <span class="tag-badge">Residência</span>
+            </div>
+          </div>
+          <div class="card-action">
+            <a href="https://api.whatsapp.com/send?phone=5514996407570&text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20CFTV%20e%20Monitoramento." target="_blank" class="btn-card">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 5. SOFTWARE (6 CARDS COM FOTO) ================= -->
+  <section class="software-section alignfull" id="software">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="badge-pill">Software</div>
+        <h2 class="section-title">Um sistema para cada<br>necessidade do seu negócio</h2>
+        <p class="section-subtitle">Da gestão de ponto ao controle de acesso, nossa tecnologia se conecta com a rotina de cada operação.</p>
+      </div>
+
+      <div class="software-grid">
+        <a href="https://api.whatsapp.com/send?phone=5514996407570&text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20o%20software%20de%20Gest%C3%A3o%20de%20Ponto." target="_blank" class="software-card" title="Gestão de Ponto">
+          <img src="../images/card-ponto.jpg" alt="Gestão de Ponto">
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=5514996407570&text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20o%20software%20para%20Academias." target="_blank" class="software-card" title="Academia">
+          <img src="../images/card-academia.jpg" alt="Academia">
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=5514996407570&text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20o%20software%20para%20Clubes." target="_blank" class="software-card" title="Clube">
+          <img src="../images/card-clube.jpg" alt="Clube">
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=5514996407570&text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20o%20software%20para%20Escolas." target="_blank" class="software-card" title="Escola">
+          <img src="../images/card-escola.jpg" alt="Escola">
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=5514996407570&text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20o%20software%20para%20Condom%C3%ADnios." target="_blank" class="software-card" title="Condomínio">
+          <img src="../images/card-condominio.jpg" alt="Condomínio">
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=5514996407570&text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20o%20software%20de%20Controle%20de%20Acesso." target="_blank" class="software-card" title="Controle de acesso">
+          <img src="../images/card-acesso.jpg" alt="Controle de acesso">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 6. POR QUE ESCOLHER A ARIA (FUNDO VERDE ESCURO) ================= -->
+  <section class="why-section alignfull" id="diferenciais">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="badge-pill dark"><i class="fa-solid fa-star"></i> EXCELÊNCIA DE PONTA A PONTA</div>
+        <h2 class="section-title white">Por que escolher a ARIA Solutions?</h2>
+        <p class="section-subtitle white">Entregamos mais do que equipamentos: entregamos tranquilidade, previsibilidade e suporte contínuo para o seu patrimônio.</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-number">01</div>
+          <h3 class="why-title">Diagnóstico & Projeto Sob Medida</h3>
+          <p class="why-desc">Analisamos a arquitetura do seu local e os fluxos de pessoas para dimensionar a solução exata, sem desperdício de investimento.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-number">02</div>
+          <h3 class="why-title">Equipamentos Homologados</h3>
+          <p class="why-desc">Trabalhamos exclusivamente com as marcas líderes do mercado nacional e internacional, garantindo durabilidade e peças de reposição.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-number">03</div>
+          <h3 class="why-title">Instalação Técnica de Alto Padrão</h3>
+          <p class="why-desc">Cabeamento estruturado, racks organizados e acabamento estético impecável, respeitando o padrão arquitetônico do seu imóvel.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-number">04</div>
+          <h3 class="why-title">Treinamento & Suporte Local</h3>
+          <p class="why-desc">Nossa equipe treina seus operadores e está pronta para atender com agilidade qualquer chamado de manutenção em Garça e região.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 7. PARCEIROS (CARROSSEL DE MARCAS) ================= -->
+  <section class="partners-section alignfull" id="parceiros">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="badge-pill">Nossas marcas</div>
+        <h2 class="section-title">Parceiros Homologados</h2>
+        <p class="section-subtitle">Trabalhamos com os melhores fabricantes e softwares do mercado nacional e internacional.</p>
+      </div>
+      
+      <div class="partners-carousel">
+        <div class="partners-track">
+          <!-- Bloco de Logos (Conjunto 1) -->
+          <div class="partner-item" title="BRAVAS Tecnologia">
+            <img src="../images/parceiros/bravas.png" alt="BRAVAS Tecnologia">
+          </div>
+          <div class="partner-item" title="Control iD">
+            <img src="../images/parceiros/control-id.png" alt="Control iD">
+          </div>
+          <div class="partner-item" title="Garen Automação">
+            <img src="../images/parceiros/garen.png" alt="Garen Automação">
+          </div>
+          <div class="partner-item" title="EVO Sistemas">
+            <img src="../images/parceiros/evo-sistemas.webp" alt="EVO Sistemas">
+          </div>
+          <div class="partner-item" title="SCA Fitness">
+            <img src="../images/parceiros/sca.png" alt="SCA Fitness">
+          </div>
+          <div class="partner-item" title="CondoID">
+            <img src="../images/parceiros/condoid.png" alt="CondoID">
+          </div>
+          <div class="partner-item" title="Econdos">
+            <img src="../images/parceiros/econdos.png" alt="Econdos">
+          </div>
+          <div class="partner-item" title="Inspell Softwares">
+            <img src="../images/parceiros/inspell.png" alt="Inspell Softwares">
+          </div>
+          <div class="partner-item" title="HAIZ">
+            <img src="../images/parceiros/haiz.webp" alt="HAIZ">
+          </div>
+          <div class="partner-item" title="Quality Systems">
+            <img src="../images/parceiros/systems.png" alt="Quality Systems">
+          </div>
+
+          <!-- Bloco de Logos (Conjunto 2 para looping contínuo) -->
+          <div class="partner-item" aria-hidden="true">
+            <img src="../images/parceiros/bravas.png" alt="BRAVAS Tecnologia">
+          </div>
+          <div class="partner-item" aria-hidden="true">
+            <img src="../images/parceiros/control-id.png" alt="Control iD">
+          </div>
+          <div class="partner-item" aria-hidden="true">
+            <img src="../images/parceiros/garen.png" alt="Garen Automação">
+          </div>
+          <div class="partner-item" aria-hidden="true">
+            <img src="../images/parceiros/evo-sistemas.webp" alt="EVO Sistemas">
+          </div>
+          <div class="partner-item" aria-hidden="true">
+            <img src="../images/parceiros/sca.png" alt="SCA Fitness">
+          </div>
+          <div class="partner-item" aria-hidden="true">
+            <img src="../images/parceiros/condoid.png" alt="CondoID">
+          </div>
+          <div class="partner-item" aria-hidden="true">
+            <img src="../images/parceiros/econdos.png" alt="Econdos">
+          </div>
+          <div class="partner-item" aria-hidden="true">
+            <img src="../images/parceiros/inspell.png" alt="Inspell Softwares">
+          </div>
+          <div class="partner-item" aria-hidden="true">
+            <img src="../images/parceiros/haiz.webp" alt="HAIZ">
+          </div>
+          <div class="partner-item" aria-hidden="true">
+            <img src="../images/parceiros/systems.png" alt="Quality Systems">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 8. MAPA & ABRANGÊNCIA ================= -->
+  <section class="delivery-section alignfull" id="sobre">
+    <div class="container">
+      <div class="delivery-grid">
+        <div>
+          <h2 class="delivery-title">Nós entregamos a solução que você precisa!</h2>
+          <p class="delivery-text">
+            A Aria Solutions visa solucionar as necessidades dos clientes através da tecnologia com abrangência em suas determinadas soluções e com foco em serviços pós venda, priorizando o atendimento ao cliente. De forma objetiva e com clareza nas atividades a serem realizadas.
+          </p>
+          <p class="delivery-text">
+            Com sede em Garça interior de SP, nós atendemos todo o Brasil e agora com consultoria no exterior no Suriname e Guiana.
+          </p>
+
+          <div class="delivery-badges-group">
+            <div class="delivery-badge-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Sede Técnica em Garça - Interior de SP</span>
+            </div>
+            <div class="delivery-badge-item">
+              <i class="fa-solid fa-truck-fast"></i>
+              <span>Atendimento em todo o Território Nacional</span>
+            </div>
+            <div class="delivery-badge-item">
+              <i class="fa-solid fa-earth-americas"></i>
+              <span>Consultoria Internacional (Suriname & Guiana)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="delivery-map-visual">
+          <img src="../images/mapa-brasil.png" alt="Mapa de atendimento ARIA Solutions: Sede em Garça/SP e expansão internacional">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 9. GALERIA DE FOTOS REAIS / EVENTOS ================= -->
+  <section class="gallery-section alignfull">
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="../images/galeria-daniel-garen.png" alt="Técnico ARIA Solutions em Estande Oficial com painel GAREN">
+        <div class="gallery-overlay">
+          <span>Estande Oficial & Soluções Garen</span>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="../images/galeria-equipe-estande.png" alt="Equipe ARIA Solutions em Feira de Segurança">
+        <div class="gallery-overlay">
+          <span>Equipe Especializada ARIA Solutions</span>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="../images/galeria-daniel-evo.png" alt="Bancada de Testes de CFTV e Controle de Acesso">
+        <div class="gallery-overlay">
+          <span>Demonstração de Sistemas & Ponto Eletrônico</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 10. RODAPÉ (FOOTER) ================= -->
+  <footer class="site-footer alignfull" id="contato">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Coluna 1: Sobre ARIA -->
+        <div class="footer-col">
+          <img src="../logo.jpg" alt="ARIA Solutions" class="footer-logo">
+          <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-light-muted); margin-bottom: 20px;">
+            Conectando tecnologia, segurança e controle de acesso de alta performance para empresas e condomínios em Garça e região.
+          </p>
+          <div style="font-size: 0.85rem; color: #94a3b8;">
+            <strong style="color: #ffffff;">Razão Social:</strong> Daniel Hermon de Oliveira Lima<br>
+            <strong style="color: #ffffff;">CNPJ:</strong> 58.294.468/0001-16
+          </div>
+        </div>
+
+        <!-- Coluna 2: Soluções -->
+        <div class="footer-col">
+          <h4>Soluções</h4>
+          <ul class="footer-links">
+            <li><a href="/catracas-e-torniquetes/">Catracas & Torniquetes</a></li>
+            <li><a href="#solucoes">Reconhecimento Facial</a></li>
+            <li><a href="#solucoes">CFTV & Câmeras IP</a></li>
+            <li><a href="/cancelas-automaticas/">Cancelas Automáticas</a></li>
+            <li><a href="#solucoes">Fechaduras Digitais</a></li>
+            <li><a href="#solucoes">Portaria Autônoma</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Navegação -->
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio">Página Inicial</a></li>
+            <li><a href="/quem-somos/">Quem Somos</a></li>
+            <li><a href="#diferenciais">Por que a ARIA</a></li>
+            <li><a href="#solucoes">Simulador de Soluções</a></li>
+            <li><a href="#software">Dúvidas Frequentes</a></li>
+            <li><a href="#contato">Fale Conosco</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 4: Atendimento -->
+        <div class="footer-col">
+          <h4>Atendimento</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Rua Coronel Joaquim Piza, 140<br>Garça – SP, CEP 17400-000</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>(14) 99640-7570</span>
+          </div>
+          <div style="margin-top: 18px;">
+            <a href="https://api.whatsapp.com/send?phone=5514996407570&text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20atendimento." target="_blank" class="btn btn-outline-white" style="width: 100%; font-size: 0.88rem; padding: 10px 16px;">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>Conversar no WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 ARIA SOLUTIONS — Todos os direitos reservados.
+        </div>
+        <div>
+          Segurança Eletrônica & Controle de Acesso Inteligente
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= 11. BOTÃO WHATSAPP FLUTUANTE ================= -->
+  <div class="whatsapp-floating">
+    <div class="whatsapp-tooltip">
+      <span class="status-dot"></span>
+      <span>Fale com nossa equipe</span>
+    </div>
+    <a href="https://api.whatsapp.com/send?phone=5514996407570&text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20ARIA%20Solutions%20e%20gostaria%20de%20atendimento." target="_blank" class="whatsapp-btn" title="Falar no WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    if (navToggle && navMenu) {
+      navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('mobile-open');
+        const icon = navToggle.querySelector('i');
+        if (icon) {
+          icon.classList.toggle('fa-bars');
+          icon.classList.toggle('fa-xmark');
+        }
+      });
+    }
+  </script>
