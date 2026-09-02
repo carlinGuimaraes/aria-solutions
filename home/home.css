@@ -134,8 +134,9 @@ img {
   margin-bottom: 48px;
 }
 
-.section-header.text-center {
-  text-align: center;
+.section-header.text-center,
+.text-center {
+  text-align: center !important;
 }
 
 .section-title {
@@ -629,23 +630,24 @@ img {
 }
 
 .partner-item img {
-  max-height: 40px;
-  max-width: 120px;
+  max-height: 42px;
+  max-width: 125px;
   width: auto;
   height: auto;
   object-fit: contain;
-  filter: grayscale(100%) opacity(0.6);
+  filter: none;
+  opacity: 1;
   transition: var(--transition);
 }
 
 .partner-item:hover {
-  transform: translateY(-2px);
-  border-color: #cbd5e1;
+  transform: translateY(-3px);
+  border-color: var(--accent);
   box-shadow: 0 6px 16px rgba(9, 44, 29, 0.08);
 }
 
 .partner-item:hover img {
-  filter: grayscale(0%) opacity(1);
+  transform: scale(1.05);
 }
 
 @keyframes scrollLogos {
