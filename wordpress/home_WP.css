@@ -337,7 +337,7 @@ img {
   position: relative;
   min-height: 560px;
   background-color: #051b11;
-  background-image: linear-gradient(to right, rgba(5, 27, 17, 0.96) 0%, rgba(5, 27, 17, 0.82) 45%, rgba(5, 27, 17, 0.35) 100%), url('../images/hero-aria.png');
+  background-image: linear-gradient(to right, rgba(5, 27, 17, 0.96) 0%, rgba(5, 27, 17, 0.82) 45%, rgba(5, 27, 17, 0.35) 100%), url('https://ariasolutions.com.br/wp-content/uploads/2026/09/hero-aria.png');
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
