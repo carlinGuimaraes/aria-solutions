@@ -7,11 +7,10 @@
      
      COMO USAR:
      1. No painel do WordPress, crie ou edite a página Home.
-     2. Mude o editor para o "Editor de Código" (Atalho: Ctrl + Shift + Alt + M ou
-        clique nos 3 pontinhos no canto superior direito > "Editor de código").
+     2. Mude o editor para o "Editor de Código" (Atalho: Ctrl + Shift + Alt + M ou 3 pontinhos > "Editor de código").
      3. Cole este código diretamente no editor de código.
      4. Todas as seções possuem a classe "alignfull" para ocupar 100% da largura da tela.
-     5. O Cabeçalho (Header) foi removido deste código, pois é gerenciado globalmente via módulo no WordPress.
+     5. O Cabeçalho (Header) e o Rodapé (Footer) foram removidos deste código, pois são gerenciados globalmente via módulos no WordPress.
      ========================================================================== -->
 
 
@@ -403,79 +402,6 @@
     </div>
   </section>
 
-  <!-- ================= 10. RODAPÉ (FOOTER) ================= -->
-  <footer class="site-footer alignfull" id="contato">
-    <div class="container">
-      <div class="footer-grid">
-        <!-- Coluna 1: Sobre ARIA -->
-        <div class="footer-col">
-          <img src="https://ariasolutions.com.br/wp-content/uploads/2026/09/logo.jpg" alt="ARIA Solutions" class="footer-logo">
-          <p style="font-size: 0.9rem; line-height: 1.6; color: var(--text-light-muted); margin-bottom: 20px;">
-            Conectando tecnologia, segurança e controle de acesso de alta performance para empresas e condomínios em Garça e região.
-          </p>
-          <div style="font-size: 0.85rem; color: #94a3b8;">
-            <strong style="color: #ffffff;">Razão Social:</strong> Daniel Hermon de Oliveira Lima<br>
-            <strong style="color: #ffffff;">CNPJ:</strong> 58.294.468/0001-16
-          </div>
-        </div>
-
-        <!-- Coluna 2: Soluções -->
-        <div class="footer-col">
-          <h4>Soluções</h4>
-          <ul class="footer-links">
-            <li><a href="/catracas-e-torniquetes/">Catracas & Torniquetes</a></li>
-            <li><a href="#solucoes">Reconhecimento Facial</a></li>
-            <li><a href="#solucoes">CFTV & Câmeras IP</a></li>
-            <li><a href="/cancelas-automaticas/">Cancelas Automáticas</a></li>
-            <li><a href="#solucoes">Fechaduras Digitais</a></li>
-            <li><a href="#solucoes">Portaria Autônoma</a></li>
-          </ul>
-        </div>
-
-        <!-- Coluna 3: Navegação -->
-        <div class="footer-col">
-          <h4>Navegação</h4>
-          <ul class="footer-links">
-            <li><a href="#inicio">Página Inicial</a></li>
-            <li><a href="/quem-somos/">Quem Somos</a></li>
-            <li><a href="#diferenciais">Por que a ARIA</a></li>
-            <li><a href="#solucoes">Simulador de Soluções</a></li>
-            <li><a href="#software">Dúvidas Frequentes</a></li>
-            <li><a href="#contato">Fale Conosco</a></li>
-          </ul>
-        </div>
-
-        <!-- Coluna 4: Atendimento -->
-        <div class="footer-col">
-          <h4>Atendimento</h4>
-          <div class="footer-contact-item">
-            <i class="fa-solid fa-location-dot"></i>
-            <span>Rua Coronel Joaquim Piza, 140<br>Garça – SP, CEP 17400-000</span>
-          </div>
-          <div class="footer-contact-item">
-            <i class="fa-brands fa-whatsapp"></i>
-            <span>(14) 99640-7570</span>
-          </div>
-          <div style="margin-top: 18px;">
-            <a href="https://api.whatsapp.com/send?phone=5514996407570&text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20atendimento." target="_blank" class="btn btn-outline-white" style="width: 100%; font-size: 0.88rem; padding: 10px 16px;">
-              <i class="fa-brands fa-whatsapp"></i>
-              <span>Conversar no WhatsApp</span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div>
-          © 2026 ARIA SOLUTIONS — Todos os direitos reservados.
-        </div>
-        <div>
-          Segurança Eletrônica & Controle de Acesso Inteligente
-        </div>
-      </div>
-    </div>
-  </footer>
-
   <!-- ================= 11. BOTÃO WHATSAPP FLUTUANTE ================= -->
   <div class="whatsapp-floating">
     <div class="whatsapp-tooltip">
@@ -486,20 +412,3 @@
       <i class="fa-brands fa-whatsapp"></i>
     </a>
   </div>
-
-  <!-- Scripts -->
-  <script>
-    const navToggle = document.querySelector('.nav-toggle');
-    const navMenu = document.querySelector('.nav-menu');
-
-    if (navToggle && navMenu) {
-      navToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('mobile-open');
-        const icon = navToggle.querySelector('i');
-        if (icon) {
-          icon.classList.toggle('fa-bars');
-          icon.classList.toggle('fa-xmark');
-        }
-      });
-    }
-  </script>
