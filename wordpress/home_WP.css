@@ -1069,4 +1069,55 @@ footer.alignfull > .container {
   text-decoration: none !important;
 }
 
+/* ==========================================================================
+   WPAUTOP & GRID RESETS (ELIMINA CARDS EM 'X' OU PARÁGRAFOS FANTASMAS)
+   ========================================================================== */
+.solutions-grid > p,
+.software-grid > p,
+.why-grid > p,
+.value-bar-grid > p,
+.gallery-grid > p,
+.delivery-grid > p,
+.partners-track > p,
+.solutions-grid > br,
+.software-grid > br,
+.why-grid > br {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+/* Garante 3 colunas uniformes nos grids de Soluções e Software */
+.solutions-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 28px !important;
+  width: 100% !important;
+}
+
+.software-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 22px !important;
+  max-width: 900px !important;
+  margin: 0 auto !important;
+  width: 100% !important;
+}
+
+@media (max-width: 991px) {
+  .solutions-grid,
+  .software-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .solutions-grid,
+  .software-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 </style>
